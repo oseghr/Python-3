@@ -4,7 +4,11 @@
 #run the function
 import qrcode
 
-def generate_qrcode(text):
+#User supplied information
+site_url = input("Enter your site URL (eg. https://www.myapp.com):\n")
+imageName = input("Enter your QR Code name:\n")
+
+def generate_qrcode(site_url):
     #QR Code setup object parameters
     qr = qrcode.QRCode(
         version = 1,
@@ -14,11 +18,11 @@ def generate_qrcode(text):
     )
 
     #QR Code functionality
-    qr.add_data(text)
+    qr.add_data(site_url)
     qr.make(fit = True)
     #QR Code Image settings
     img = qr.make_image(fill_color="black", back_color="white")
-    img.save("qrImg.png")
+    img.save(f"{imageName}.png")
     print("QR Code generated successfully")
 
-generate_qrcode("https://www.cymworx.com")
+generate_qrcode(site_url)
