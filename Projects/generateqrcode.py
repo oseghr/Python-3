@@ -6,9 +6,9 @@ import qrcode
 
 def generate_qrcode(text):
     #QR Code setup object parameters
-    qr = qrcode(
+    qr = qrcode.QRCode(
         version = 1,
-        error_correction = qrcode.constants.ERROR_CORRECT_L,
+        error_correction = qrcode.constant.ERROR_CORRECT_L,
         box_size = 10,
         border = 4,
     )
