@@ -19,5 +19,6 @@ def generate_qrcode(text):
     #QR Code Image settings
     img = qr.make_image(fill_color="black", back_color="white")
     img.save("qrImg.png")
+    print("QR Code generated successfully")
 
 generate_qrcode("https://www.cymworx.com")
