@@ -6,8 +6,9 @@ def main():
     print("Interest Loan Calculator")
     print("=========================")
 
+    #define variables
     principal = float(input("Enter your loan amount:|n"))
-    apr = float(input("Enter your annual interest rate:\n"))
+    annual_pr = float(input("Enter your annual interest rate:\n"))
     period = int(input("Enter the number of years:\n"))
 
     
