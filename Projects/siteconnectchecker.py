@@ -1,11 +1,10 @@
-# import urllib
+# import urllib.request to get the data from the url
 import urllib.request as urllib
 
 print("This is the site checker connectivity")
-
+#get user response
 checker = input("Want to check a site?(Y/N)\n")
 
-# import urllib.request to get the data from the url
 # write a function that takes a url
 def main(url):
     print("Checking connection...")
