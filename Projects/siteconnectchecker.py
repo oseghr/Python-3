@@ -12,6 +12,7 @@ def main(url):
     print("Checking connection...")
     #open the url open
     response = urllib.urlopen(url)
+    print(f"Connected to {url} successfully!")
 
 
 
