@@ -13,6 +13,7 @@ def main(url):
     #open the url open
     response = urllib.urlopen(url)
     print(f"Connected to {url} successfully!")
+    print(f"The response code was {response.getcode()}")
 
 
 
