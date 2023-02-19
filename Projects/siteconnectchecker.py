@@ -1,8 +1,3 @@
-
-
-
-
-
 # import urllib
 import urllib.request as urllib
 
@@ -15,6 +10,8 @@ site_url = input("Enter your site url to check:\n")
 # write a function that takes a url
 def main(url):
     print("Checking connection...")
+    #open the url open
+    response = urllib.urlopen(url)
 
 
 
